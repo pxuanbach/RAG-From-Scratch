@@ -61,3 +61,7 @@ On Windows PowerShell, use `$env:ANTHROPIC_BASE_URL = "http://127.0.0.1:1234"` i
 ## Data
 
 The lessons use [MultiHop-RAG](https://huggingface.co/datasets/yixuantt/MultiHopRAG) (Tang & Yang, 2024): 609 English news articles from late 2023 and 2,556 questions with answers and supporting evidence. The scripts download it from Hugging Face on first run; this repo does not redistribute it. The dataset is licensed ODC-BY 1.0, and the article text remains the property of its publishers.
+
+## License
+
+The code is released under the [MIT License](LICENSE). The MultiHop-RAG dataset keeps its own ODC-BY 1.0 license.

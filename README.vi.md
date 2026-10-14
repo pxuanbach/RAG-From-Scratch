@@ -61,3 +61,7 @@ Trên Windows PowerShell, dùng `$env:ANTHROPIC_BASE_URL = "http://127.0.0.1:123
 ## Dữ liệu
 
 Series dùng [MultiHop-RAG](https://huggingface.co/datasets/yixuantt/MultiHopRAG) (Tang & Yang, 2024): 609 bài báo tiếng Anh cuối năm 2023 và 2,556 câu hỏi kèm đáp án và bằng chứng. Script tự tải dataset từ Hugging Face ở lần chạy đầu, repo này không phân phối lại dữ liệu. Dataset dùng giấy phép ODC-BY 1.0, nội dung bài báo vẫn thuộc về các nhà xuất bản.
+
+## Giấy phép
+
+Code phát hành theo [giấy phép MIT](LICENSE). Dataset MultiHop-RAG giữ giấy phép ODC-BY 1.0 riêng của nó.
