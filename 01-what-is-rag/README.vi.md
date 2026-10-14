@@ -8,7 +8,7 @@ Bài học: [RAG là gì? Tự xây RAG đầu tiên trong khoảng 50 dòng Pyt
 |---|---|
 | `rag_50_lines.py` | Pipeline: load, embed, retrieve, generate |
 | `experiment.py` | Hỏi cùng một câu theo 3 cách (không tài liệu, dán tài liệu vào prompt, RAG), ghi số token và độ trễ vào `results.json` |
-| `results.json` | Kết quả tôi chạy bằng Qwen2.5-7B-Instruct-1M trên LM Studio, card RTX 5060 Ti |
+| `results.json` | Kết quả mình chạy bằng Qwen2.5-7B-Instruct-1M trên LM Studio, card RTX 5060 Ti |
 
 ## Chuẩn bị
 
@@ -62,7 +62,7 @@ Hỏi bằng tiếng Việt cũng được, vì `bge-m3` là model đa ngôn ng�
 uv run python rag_50_lines.py "FTX được thành lập năm nào và lúc đỉnh cao được định giá bao nhiêu?"
 ```
 
-Lần tôi chạy, script vẫn tìm đúng bài TechCrunch (điểm 0.643) và model trả lời bằng tiếng Việt. Bài 02 đo xem tìm kiếm chéo ngôn ngữ chính xác đến đâu trên nhiều câu hỏi.
+Lần mình chạy, script vẫn tìm đúng bài TechCrunch (điểm 0.643) và model trả lời bằng tiếng Việt. Bài 02 đo xem tìm kiếm chéo ngôn ngữ chính xác đến đâu trên nhiều câu hỏi.
 
 ## Chạy lại thí nghiệm
 
