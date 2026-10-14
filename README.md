@@ -9,7 +9,7 @@ Sample code for the RAG From Scratch series on [UtilKits](https://www.util-kits.
 | # | Lesson | Level | Status |
 |---|---|---|---|
 | 01 | [What is RAG? Your first RAG in about 50 lines](01-what-is-rag) | Beginner | ready |
-| 02 | [Embeddings and vector search](02-embeddings) | Beginner | coming soon |
+| 02 | [Embeddings and vector search](02-embeddings) | Beginner | ready |
 | 03 | [Ingestion and chunking](03-chunking) | Beginner | coming soon |
 | 04 | [Storing vectors in Postgres with pgvector](04-pgvector) | Beginner | coming soon |
 | 05 | [Grounded answers with citations](05-grounded-generation) | Beginner | coming soon |

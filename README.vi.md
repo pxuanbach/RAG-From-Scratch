@@ -9,7 +9,7 @@ Code mẫu cho series RAG From Scratch trên [UtilKits](https://www.util-kits.io
 | # | Bài | Level | Trạng thái |
 |---|---|---|---|
 | 01 | [RAG là gì? Tự xây RAG đầu tiên trong khoảng 50 dòng](01-what-is-rag/README.vi.md) | Beginner | đã có |
-| 02 | [Embeddings và vector search](02-embeddings) | Beginner | sắp ra |
+| 02 | [Embeddings và vector search](02-embeddings/README.vi.md) | Beginner | đã có |
 | 03 | [Ingestion và chunking](03-chunking) | Beginner | sắp ra |
 | 04 | [Lưu vector với Postgres + pgvector](04-pgvector) | Beginner | sắp ra |
 | 05 | [Câu trả lời grounded có trích nguồn](05-grounded-generation) | Beginner | sắp ra |

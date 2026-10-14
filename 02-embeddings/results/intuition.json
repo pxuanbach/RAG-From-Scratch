@@ -1,0 +1,24 @@
+{
+  "model": "BAAI/bge-m3",
+  "dim": 1024,
+  "sentences": {
+    "A": "In January, Bankman-Fried pleaded not guilty to all counts, which include wire fraud, conspiracy to commit money laundering and conspiracy to misuse customer funds.",
+    "B": "Sam Bankman-Fried, the founder of failed cryptocurrency exchange FTX, is on trial for seven counts of wire fraud and conspiracy.",
+    "C": "The Raiders were abysmal on the offensive side of the ball, outside of a second-quarter touchdown drive led by Josh Jacobs.",
+    "D": "Hồi tháng 1, Bankman-Fried đã không nhận tội với mọi cáo buộc, gồm gian lận chuyển tiền điện tử, âm mưu rửa tiền và âm mưu lạm dụng tiền của khách hàng."
+  },
+  "cosine": {
+    "A-B": 0.595,
+    "A-C": 0.255,
+    "A-D": 0.867,
+    "B-C": 0.305,
+    "B-D": 0.607,
+    "C-D": 0.308
+  },
+  "A_vs_C": {
+    "cosine": 0.255,
+    "l2": 1.22,
+    "l2_squared": 1.489
+  },
+  "scaled_dot": 0.766
+}
