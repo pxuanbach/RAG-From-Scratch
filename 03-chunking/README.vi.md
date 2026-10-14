@@ -18,12 +18,12 @@ Thư mục này mở rộng `ragkit/` của bài 02 với bước làm sạch (`
 | `junk_in_topk.py` | Rác lọt vào top 5 bao nhiêu khi bỏ qua bước làm sạch |
 | `chunk_ids.py` | Bao nhiêu id chunk còn nguyên sau một chỉnh sửa nhỏ, mã băm nội dung so với vị trí |
 | `astros.py` | Câu hỏi Astros của bài 01, chạy trên cả 609 bài |
-| `results/` | `junk_stats`, `chunking`, `significance`, `junk_in_topk`, `chunk_ids`, `astros` (JSON): kết quả mình chạy trên RTX 5060 Ti, 2026-10-14 |
+| `results/` | `junk_stats`, `chunking`, `significance`, `junk_in_topk`, `chunk_ids`, `astros` (JSON): kết quả tôi chạy trên RTX 5060 Ti, 2026-10-14 |
 
 ## Chuẩn bị
 
 1. Cài thư viện từ thư mục gốc của repo, theo [README gốc](../README.vi.md#cài-đặt).
-2. Có GPU thì tốt. `compare_chunking.py` embed tổng cộng khoảng 70.000 chunk (lần đầu khoảng 25 phút trên GPU của mình, chạy lại với cache khoảng 4 phút).
+2. Có GPU thì tốt. `compare_chunking.py` embed tổng cộng khoảng 70.000 chunk (lần đầu khoảng 25 phút trên GPU của tôi, chạy lại với cache khoảng 4 phút).
 3. Chỉ `astros.py --ask` cần LLM. Đặt các biến LM Studio hoặc Claude trong README gốc.
 
 Embedding được cache ở `../.cache/embeddings/` (file `BAAI__bge-m3_len1024_0p.npz`, khoảng 300 MB). Xóa file này để tính lại.

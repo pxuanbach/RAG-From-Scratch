@@ -14,7 +14,7 @@ Bài học: [Embedding và vector search: chọn model bằng bài test 10 câu 
 | `eval/build_smoke.py` | Cách chọn 10 câu hỏi (để tham khảo, không cần chạy lại) |
 | `intuition.py` | Cosine, dot product và L2 trên bốn câu thật |
 | `compare_models.py` | Embed cả 609 bài cho mỗi cấu hình rồi chạy smoke test |
-| `results/` | `intuition.json` và `compare.json`: kết quả mình chạy trên RTX 5060 Ti, 2026-10-14 |
+| `results/` | `intuition.json` và `compare.json`: kết quả tôi chạy trên RTX 5060 Ti, 2026-10-14 |
 
 ## Chuẩn bị
 
@@ -31,7 +31,7 @@ uv run python intuition.py
 uv run python compare_models.py
 ```
 
-Kết quả mong đợi của `intuition.py` (điểm khớp tới ba chữ số thập phân trên máy mình):
+Kết quả mong đợi của `intuition.py` (điểm khớp tới ba chữ số thập phân trên máy tôi):
 
 ```text
 dimension: 1024, vector norm: 1.000
@@ -67,7 +67,7 @@ Thêm một dòng vào `CONFIGS` trong `compare_models.py`. Đọc model card tr
 ("my model", dict(model_name="org/model-name", query_prefix="query: ", doc_prefix="passage: ", max_seq_length=512)),
 ```
 
-Bạn cũng có thể thêm câu hỏi của mình vào `eval/smoke.jsonl` (cùng các trường: `id`, `q_en`, `q_vi`, `expected_urls`).
+Bạn cũng có thể thêm câu hỏi của bạn vào `eval/smoke.jsonl` (cùng các trường: `id`, `q_en`, `q_vi`, `expected_urls`).
 
 `OpenAIEmbedder` trong `ragkit/embed.py` minh họa phương án dùng API. Tôi đã viết nhưng chưa chạy lần nào vì không có API key. Cài `openai`, đặt `OPENAI_API_KEY`, và coi nó là điểm xuất phát.
 
