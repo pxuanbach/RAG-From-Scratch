@@ -1,0 +1,68 @@
+{
+  "model": "qwen2.5-7b-instruct-1m",
+  "question": "When was FTX founded and what was it worth at its peak?",
+  "n_paragraphs": 60,
+  "top3": [
+    {
+      "score": 0.649,
+      "source": "TechCrunch",
+      "title": "SBF’s trial starts soon, but how did he — and FTX — get here?",
+      "text": "The 31-year-old co-founded FTX in 2019; within a few years the once third-largest crypto exchange’s valuation hit $32 billion at its peak. It’s now trying to claw back any funds to distribute to creditors."
+    },
+    {
+      "score": 0.556,
+      "source": "TechCrunch",
+      "title": "SBF’s trial starts soon, but how did he — and FTX — get here?",
+      "text": "Before FTX, Bankman-Fried co-founded crypto-trading firm Alameda Research in 2017. He co-founded FTX in 2019 as a complement to Alameda, to help bring in revenue and liquidity for the trading arm."
+    },
+    {
+      "score": 0.454,
+      "source": "TechCrunch",
+      "title": "SBF’s trial starts soon, but how did he — and FTX — get here?",
+      "text": "The highly anticipated criminal trial for Sam Bankman-Fried, former CEO of bankrupt crypto exchange FTX, started Tuesday to determine whether he’s guilty of seven counts of fraud and conspiracy. And as one former federal prosecutor put it: “The odds seem to be stacked against him at this point.”"
+    }
+  ],
+  "hook_closed_book": {
+    "answer": "I do not have specific information about internal policies of companies such as Acme Robotics. To provide an accurate answer regarding the hotel cap per night in Tokyo under the Acme Robotics travel policy, you would need to refer to their official policy documents or contact their human resources department directly for the most precise and up-to-date information.",
+    "input_tokens": 43,
+    "output_tokens": 66,
+    "latency_s": 1.05,
+    "haiku_5_5_cost_usd_est": 3.7e-05
+  },
+  "hook_with_doc": {
+    "answer": "The hotel cap per night in Tokyo under the Acme Robotics travel policy is 240 USD [1].",
+    "input_tokens": 143,
+    "output_tokens": 24,
+    "latency_s": 0.32,
+    "haiku_5_5_cost_usd_est": 2.6e-05
+  },
+  "a_closed_book": {
+    "answer": "FTX was founded in 2017 by Sam Bankman-Fried, Alana Litz, and Gary Wang. At its peak, the company was valued at approximately $32 billion.",
+    "input_tokens": 40,
+    "output_tokens": 42,
+    "latency_s": 0.74,
+    "haiku_5_5_cost_usd_est": 2.5e-05
+  },
+  "b_stuff_20_articles": {
+    "error": "Error code: 500 - {'type': 'error', 'error': {'type': 'api_error', 'message': 'Engine protocol predict request returned 400: {\"error\":{\"code\":400,\"message\":\"request (39965 tokens) exceeds the available context size (13056 tokens), try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":39965,\"n_ctx\":13056}}'}}"
+  },
+  "b_stuff_5_articles": {
+    "answer": "FTX was founded in 2019 by Sam Bankman-Fried and Gary Wang. According to the provided documents, at its peak, FTX's valuation hit $32 billion [4].",
+    "input_tokens": 10535,
+    "output_tokens": 43,
+    "latency_s": 4.0,
+    "haiku_5_5_cost_usd_est": 0.001075
+  },
+  "c_rag_top3": {
+    "answer": "FTX was founded in 2019, according to document [2]. At its peak, FTX's valuation hit $32 billion, as stated in document [1].",
+    "input_tokens": 311,
+    "output_tokens": 39,
+    "latency_s": 0.74,
+    "haiku_5_5_cost_usd_est": 5.1e-05
+  },
+  "b_full_corpus_estimate": {
+    "input_tokens": 1246318,
+    "note": "609 articles x 2,046.5 avg tokens; exceeds Haiku 5.5's 1M context, not run",
+    "cost_usd_if_it_fit": 0.6237
+  }
+}
