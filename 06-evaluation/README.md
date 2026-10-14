@@ -1,11 +1,7 @@
-# 06. Evaluating RAG: Golden Set, Recall@k, Faithfulness
+# 06. Evaluating RAG: golden set, recall@k, faithfulness
 
-*Đo lường RAG: golden set, recall@k, faithfulness*
+Đo lường RAG: golden set, recall@k, faithfulness · Intermediate · coming soon
 
-**Level:** Intermediate · **Status:** coming soon
+You will build: a golden set built from the dataset's questions, an `eval.py` that reports results per question type, and the baseline every later lesson compares against.
 
-## What you will build
-
-A golden set built from the dataset's questions, an `eval.py` that reports results per question type, and the baseline every later lesson compares against.
-
-The lesson text and code land in this folder when the post is published. Start with [01-what-is-rag](../01-what-is-rag) for now.
+This folder gets the code and run instructions when the lesson is published. Until then, start with [01-what-is-rag](../01-what-is-rag).

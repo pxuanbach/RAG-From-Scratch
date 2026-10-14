@@ -1,11 +1,7 @@
-# 03. Ingestion and Chunking
+# 03. Ingestion and chunking
 
-*Ingestion và chunking*
+Ingestion và chunking · Beginner · coming soon
 
-**Level:** Beginner · **Status:** coming soon
+You will build: a `load → clean → chunk` pipeline for messy real-world articles, stable chunk IDs, and a hit@3 table comparing chunking strategies.
 
-## What you will build
-
-A `load → clean → chunk` pipeline for messy real-world articles, stable chunk IDs, and a hit@3 table comparing chunking strategies.
-
-The lesson text and code land in this folder when the post is published. Start with [01-what-is-rag](../01-what-is-rag) for now.
+This folder gets the code and run instructions when the lesson is published. Until then, start with [01-what-is-rag](../01-what-is-rag).

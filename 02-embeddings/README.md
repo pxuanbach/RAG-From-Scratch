@@ -1,11 +1,7 @@
-# 02. Embeddings and Vector Search
+# 02. Embeddings and vector search
 
-*Embeddings và vector search*
+Embeddings và vector search · Beginner · coming soon
 
-**Level:** Beginner · **Status:** coming soon
+You will build: an `Embedder` wrapper, a 10-question smoke test that measures hit@3, and a side-by-side comparison of two embedding models on the news corpus, including Vietnamese questions against English articles.
 
-## What you will build
-
-An `Embedder` wrapper, a 10-question smoke test that measures hit@3, and a side-by-side comparison of two embedding models on the news corpus, including Vietnamese questions against English articles.
-
-The lesson text and code land in this folder when the post is published. Start with [01-what-is-rag](../01-what-is-rag) for now.
+This folder gets the code and run instructions when the lesson is published. Until then, start with [01-what-is-rag](../01-what-is-rag).

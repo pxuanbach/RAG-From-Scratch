@@ -1,11 +1,7 @@
-# 08. Query Transformation
+# 08. Query transformation
 
-*Biến đổi query: rewrite, multi-query, HyDE*
+Biến đổi query: rewrite, multi-query, HyDE · Intermediate · coming soon
 
-**Level:** Intermediate · **Status:** coming soon
+You will build: a pluggable `QueryTransformer` interface: follow-up condensing, filter extraction from the question, multi-query with an English translation, and a table showing which techniques pay off.
 
-## What you will build
-
-A pluggable `QueryTransformer` interface: follow-up condensing, filter extraction from the question, multi-query with an English translation, and a table showing which techniques pay off.
-
-The lesson text and code land in this folder when the post is published. Start with [01-what-is-rag](../01-what-is-rag) for now.
+This folder gets the code and run instructions when the lesson is published. Until then, start with [01-what-is-rag](../01-what-is-rag).

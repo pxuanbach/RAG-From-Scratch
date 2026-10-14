@@ -1,6 +1,6 @@
 # RAG From Scratch
 
-Companion code for the **RAG From Scratch** series on [UtilKits](https://www.util-kits.io.vn/en/blog). Twelve hands-on lessons take you from a 50-line script to a RAG service you can ship. Every lesson builds something that runs, and every number in the posts comes from running this code.
+Sample code for the RAG From Scratch series on [UtilKits](https://www.util-kits.io.vn/en/blog). The 12 lessons start with a 50-line script and end with a RAG service you can deploy. Each folder holds one lesson's code and a README that explains how to run it. The posts explain the ideas, and the numbers in them come from running this code.
 
 [Tiếng Việt](README.vi.md)
 
@@ -8,20 +8,20 @@ Companion code for the **RAG From Scratch** series on [UtilKits](https://www.uti
 
 | # | Lesson | Level | Status |
 |---|---|---|---|
-| 01 | [What Is RAG? Build Your First RAG in About 50 Lines](01-what-is-rag) | Beginner | ready |
-| 02 | [Embeddings and Vector Search](02-embeddings) | Beginner | coming soon |
-| 03 | [Ingestion and Chunking](03-chunking) | Beginner | coming soon |
-| 04 | [Storing Vectors in Postgres with pgvector](04-pgvector) | Beginner | coming soon |
-| 05 | [Grounded Answers with Citations](05-grounded-generation) | Beginner | coming soon |
+| 01 | [What is RAG? Your first RAG in about 50 lines](01-what-is-rag) | Beginner | ready |
+| 02 | [Embeddings and vector search](02-embeddings) | Beginner | coming soon |
+| 03 | [Ingestion and chunking](03-chunking) | Beginner | coming soon |
+| 04 | [Storing vectors in Postgres with pgvector](04-pgvector) | Beginner | coming soon |
+| 05 | [Grounded answers with citations](05-grounded-generation) | Beginner | coming soon |
 | 06 | [Evaluating RAG](06-evaluation) | Intermediate | coming soon |
-| 07 | [Hybrid Search and Reranking](07-hybrid-search-reranking) | Intermediate | coming soon |
-| 08 | [Query Transformation](08-query-transformation) | Intermediate | coming soon |
-| 09 | [Contextual Retrieval and Parent-Document Indexing](09-smarter-indexing) | Intermediate | coming soon |
+| 07 | [Hybrid search and reranking](07-hybrid-search-reranking) | Intermediate | coming soon |
+| 08 | [Query transformation](08-query-transformation) | Intermediate | coming soon |
+| 09 | [Contextual retrieval and parent-document indexing](09-smarter-indexing) | Intermediate | coming soon |
 | 10 | [Agentic RAG](10-agentic-rag) | Advanced | coming soon |
-| 11 | [RAG Security](11-rag-security) | Advanced | coming soon |
-| 12 | [Ship It: RAG as a Service](12-ship-it) | Advanced | coming soon |
+| 11 | [RAG security](11-rag-security) | Advanced | coming soon |
+| 12 | [Ship it: RAG as a service](12-ship-it) | Advanced | coming soon |
 
-Finish 01–05 and you can build a working RAG app. Finish 06–09 and you can measure and improve one. Finish 10–12 and you can run one in production.
+Lessons 01 to 05 get a pipeline answering questions. Lessons 06 to 09 measure it and fix what the measurements expose, and 10 to 12 add agents, security and deployment.
 
 ## Setup
 
@@ -37,7 +37,7 @@ The first run downloads the `BAAI/bge-m3` embedding model, about 2.3 GB.
 
 ## Run on a free local model or on Claude
 
-The code calls the LLM through the `anthropic` SDK, so the same script runs on Claude or on [LM Studio](https://lmstudio.ai/docs/developer/anthropic-compat), which exposes an Anthropic-compatible endpoint.
+The code calls the LLM through the `anthropic` SDK. [LM Studio](https://lmstudio.ai/docs/developer/anthropic-compat) exposes an Anthropic-compatible endpoint, so the same script runs on Claude or on a local model.
 
 ```bash
 # Local, free (LM Studio running a model such as qwen2.5-7b-instruct-1m)
@@ -49,7 +49,7 @@ export RAG_MODEL=qwen2.5-7b-instruct-1m
 export ANTHROPIC_API_KEY=sk-ant-...
 ```
 
-Then run a lesson from its folder:
+Then run a lesson from its folder. Each lesson's README lists its commands and expected output.
 
 ```bash
 cd 01-what-is-rag

@@ -1,6 +1,6 @@
 # RAG From Scratch
 
-Code đi kèm series **RAG From Scratch** trên [UtilKits](https://www.util-kits.io.vn/vi/blog). 12 bài thực hành đưa bạn từ một script 50 dòng đến một RAG service có thể đưa lên production. Bài nào cũng dựng được thứ chạy được, và mọi con số trong bài đều đo từ chính code này.
+Code mẫu cho series RAG From Scratch trên [UtilKits](https://www.util-kits.io.vn/vi/blog). Series có 12 bài, bắt đầu từ một script 50 dòng và kết thúc bằng một RAG service có thể deploy. Mỗi thư mục chứa code của một bài và một README hướng dẫn cách chạy. Phần giải thích nằm trong bài viết, còn số liệu trong bài đều đo từ chính code này.
 
 [English](README.md)
 
@@ -21,7 +21,7 @@ Code đi kèm series **RAG From Scratch** trên [UtilKits](https://www.util-kits
 | 11 | [Bảo mật RAG](11-rag-security) | Advanced | sắp ra |
 | 12 | [Ship it: đưa RAG thành service](12-ship-it) | Advanced | sắp ra |
 
-Xong bài 01–05, bạn tự xây được một ứng dụng RAG chạy được. Xong 06–09, bạn đo và cải thiện được nó. Xong 10–12, bạn vận hành được nó trên production.
+Bài 01 đến 05 dựng pipeline trả lời được câu hỏi. Bài 06 đến 09 đo pipeline và sửa những chỗ số đo chỉ ra, còn 10 đến 12 thêm agent, bảo mật và deploy.
 
 ## Cài đặt
 
@@ -37,7 +37,7 @@ Lần chạy đầu sẽ tải model embedding `BAAI/bge-m3`, khoảng 2.3 GB.
 
 ## Chạy bằng model local miễn phí hoặc bằng Claude
 
-Code gọi LLM qua SDK `anthropic`, nên cùng một script chạy được trên Claude hoặc trên [LM Studio](https://lmstudio.ai/docs/developer/anthropic-compat) (LM Studio có endpoint tương thích Anthropic).
+Code gọi LLM qua SDK `anthropic`. [LM Studio](https://lmstudio.ai/docs/developer/anthropic-compat) có endpoint tương thích Anthropic, nên cùng một script chạy được trên Claude lẫn model local.
 
 ```bash
 # Local, miễn phí (LM Studio đang chạy model như qwen2.5-7b-instruct-1m)
@@ -49,7 +49,7 @@ export RAG_MODEL=qwen2.5-7b-instruct-1m
 export ANTHROPIC_API_KEY=sk-ant-...
 ```
 
-Rồi chạy bài trong thư mục của bài đó:
+Rồi chạy bài trong thư mục của bài đó. README của từng bài ghi lệnh chạy và kết quả mong đợi.
 
 ```bash
 cd 01-what-is-rag

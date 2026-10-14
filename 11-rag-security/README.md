@@ -1,11 +1,7 @@
-# 11. RAG Security
+# 11. RAG security
 
-*Bảo mật RAG: prompt injection qua tài liệu, phân quyền, lọc output*
+Bảo mật RAG: prompt injection qua tài liệu, phân quyền, lọc output · Advanced · coming soon
 
-**Level:** Advanced · **Status:** coming soon
+You will build: a document-borne prompt injection attack you run yourself, three layers of defense measured with the eval, and per-user document access with Row Level Security.
 
-## What you will build
-
-A document-borne prompt injection attack you run yourself, three layers of defense measured with the eval, and per-user document access with Row Level Security.
-
-The lesson text and code land in this folder when the post is published. Start with [01-what-is-rag](../01-what-is-rag) for now.
+This folder gets the code and run instructions when the lesson is published. Until then, start with [01-what-is-rag](../01-what-is-rag).

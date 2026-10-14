@@ -1,11 +1,7 @@
-# 09. Contextual Retrieval and Parent-Document Indexing
+# 09. Contextual retrieval and parent-document indexing
 
-*Contextual retrieval và parent-document*
+Contextual retrieval và parent-document · Intermediate · coming soon
 
-**Level:** Intermediate · **Status:** coming soon
+You will build: contextual indexing for both vector and full-text search, the indexing cost with and without prompt caching, and a comparison against free metadata prepending. This lesson closes the Intermediate stage.
 
-## What you will build
-
-Contextual indexing for both vector and full-text search, the indexing cost with and without prompt caching, and a comparison against free metadata prepending. Closes the Intermediate stage.
-
-The lesson text and code land in this folder when the post is published. Start with [01-what-is-rag](../01-what-is-rag) for now.
+This folder gets the code and run instructions when the lesson is published. Until then, start with [01-what-is-rag](../01-what-is-rag).

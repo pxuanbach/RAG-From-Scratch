@@ -1,11 +1,7 @@
-# 05. Grounded Answers with Citations
+# 05. Grounded answers with citations
 
-*Prompt grounded, trích nguồn và biết nói "không biết"*
+Prompt grounded, trích nguồn và biết nói "không biết" · Beginner · coming soon
 
-**Level:** Beginner · **Status:** coming soon
+You will build: an end-to-end `ask` CLI with streaming, a source list, and code that checks every `[n]` citation. This lesson closes the Beginner stage.
 
-## What you will build
-
-An end-to-end `ask` CLI with streaming, a source list, and code that checks every `[n]` citation. Closes the Beginner stage.
-
-The lesson text and code land in this folder when the post is published. Start with [01-what-is-rag](../01-what-is-rag) for now.
+This folder gets the code and run instructions when the lesson is published. Until then, start with [01-what-is-rag](../01-what-is-rag).

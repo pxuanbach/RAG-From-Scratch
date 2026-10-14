@@ -1,11 +1,7 @@
-# 07. Hybrid Search and Reranking
+# 07. Hybrid search and reranking
 
-*Hybrid search + reranking*
+Hybrid search + reranking · Intermediate · coming soon
 
-**Level:** Intermediate · **Status:** coming soon
+You will build: a `tsvector` column with a GIN index, a `hybrid_search` SQL function using RRF, a reranker that cuts top-30 to top-5, and an eval table across four configurations with latency.
 
-## What you will build
-
-A `tsvector` column with a GIN index, a `hybrid_search` SQL function using RRF, a reranker that cuts top-30 to top-5, and an eval table across four configurations with latency.
-
-The lesson text and code land in this folder when the post is published. Start with [01-what-is-rag](../01-what-is-rag) for now.
+This folder gets the code and run instructions when the lesson is published. Until then, start with [01-what-is-rag](../01-what-is-rag).
