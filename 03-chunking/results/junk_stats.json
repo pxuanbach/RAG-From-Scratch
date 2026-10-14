@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-14",
+  "n_articles": 609,
+  "author_null": 64,
+  "author_empty_string": 4,
+  "author_string_None": 0,
+  "replacement_char_U+FFFD": 0,
+  "mojibake_Ã_or_â€": 0,
+  "articles_with_invisible_chars": 16,
+  "invisible_char_count": 71,
+  "articles_with_empty_paragraphs_(3+ newlines)": 58,
+  "junk_paragraphs_by_rule": {
+    "table_of_contents": 4,
+    "update_note": 2,
+    "repeated_boilerplate": 522,
+    "newsletter_template": 54,
+    "live_blog_stamp": 22
+  },
+  "articles_with_junk_by_rule": {
+    "table_of_contents": 4,
+    "update_note": 2,
+    "repeated_boilerplate": 176,
+    "newsletter_template": 54,
+    "live_blog_stamp": 3
+  },
+  "articles_with_any_junk_paragraph": 213,
+  "repeated_boilerplate_distinct_paragraphs": 31,
+  "repeated_boilerplate_top": [
+    "Advertisement",
+    "CLICK HERE TO GET THE FOX NEWS APP",
+    "Lifestyle Edit email {{ #verifyErrors }} {{ message }} {{ /verifyErrors }} {{ ^verifyError",
+    "Stay ahead of the trend in fashion and beyond with our free weekly Lifestyle Edit newslett",
+    "ADVERTISEMENT Article continues below this ad",
+    "(All times Eastern)",
+    "Facebook Twitter Whatsapp Reddit Email Share",
+    "America’s Favorite Video Today",
+    "CLICK HERE TO SIGN UP FOR OUR LIFESTYLE NEWSLETTER",
+    "QBs | RBs | WRs | TEs | D/STs | Kickers",
+    "skip past newsletter promotion Sign up to Football Daily Free daily newsletter Kick off yo",
+    "Sleepers | Busts | Projections | Start-sit"
+  ],
+  "paragraphs_total": 29011,
+  "paragraphs_after_cleaning": 28107,
+  "tokens_before": 1548729,
+  "tokens_after": 1537038,
+  "articles_emptied": 0,
+  "evidence_facts_total": 6084,
+  "evidence_facts_found_in_raw_body": 6084,
+  "evidence_facts_found_in_clean_body": 6084
+}

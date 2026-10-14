@@ -1,0 +1,56 @@
+[
+ {
+  "strategy": "fixed 256",
+  "chunks_before": 6305,
+  "chunks_after": 6317,
+  "ids_unchanged_content_hash": 23,
+  "position_ids_still_exist": 6305,
+  "position_ids_with_changed_text": 6282,
+  "share_content_ids_kept": 0.004
+ },
+ {
+  "strategy": "fixed 512",
+  "chunks_before": 3303,
+  "chunks_after": 3311,
+  "ids_unchanged_content_hash": 7,
+  "position_ids_still_exist": 3303,
+  "position_ids_with_changed_text": 3296,
+  "share_content_ids_kept": 0.002
+ },
+ {
+  "strategy": "fixed 512 + overlap 64",
+  "chunks_before": 3641,
+  "chunks_after": 3645,
+  "ids_unchanged_content_hash": 7,
+  "position_ids_still_exist": 3641,
+  "position_ids_with_changed_text": 3634,
+  "share_content_ids_kept": 0.002
+ },
+ {
+  "strategy": "recursive 256",
+  "chunks_before": 7420,
+  "chunks_after": 7436,
+  "ids_unchanged_content_hash": 6660,
+  "position_ids_still_exist": 7420,
+  "position_ids_with_changed_text": 816,
+  "share_content_ids_kept": 0.898
+ },
+ {
+  "strategy": "recursive 512",
+  "chunks_before": 3543,
+  "chunks_after": 3547,
+  "ids_unchanged_content_hash": 2841,
+  "position_ids_still_exist": 3543,
+  "position_ids_with_changed_text": 705,
+  "share_content_ids_kept": 0.802
+ },
+ {
+  "strategy": "paragraph (min 128, max 512)",
+  "chunks_before": 9180,
+  "chunks_after": 9189,
+  "ids_unchanged_content_hash": 8467,
+  "position_ids_still_exist": 9180,
+  "position_ids_with_changed_text": 758,
+  "share_content_ids_kept": 0.922
+ }
+]

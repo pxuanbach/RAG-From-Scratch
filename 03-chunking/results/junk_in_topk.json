@@ -1,0 +1,10 @@
+{
+ "strategy": "recursive 512 + header, raw text",
+ "chunks": 3569,
+ "chunks_with_junk": 418,
+ "share_of_index": 0.117,
+ "retrieved_chunks": 750,
+ "retrieved_with_junk": 57,
+ "share_of_retrieved": 0.076,
+ "questions_with_a_junk_chunk_in_top5": 34
+}

@@ -1,0 +1,153 @@
+{
+ "question": "How did the Houston Astros cheat in 2017?",
+ "budget_tokens": 2000,
+ "strategies": [
+  {
+   "strategy": "fixed 256",
+   "first_scheme_chunk_rank": 2,
+   "chunks_in_budget": 7,
+   "scheme_in_top3": true,
+   "scheme_in_budget": true,
+   "top3": [
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 1,
+     "tokens": 256
+    },
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 6,
+     "tokens": 256
+    },
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 7,
+     "tokens": 246
+    }
+   ]
+  },
+  {
+   "strategy": "fixed 512",
+   "first_scheme_chunk_rank": 2,
+   "chunks_in_budget": 3,
+   "scheme_in_top3": true,
+   "scheme_in_budget": true,
+   "top3": [
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 0,
+     "tokens": 512
+    },
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 3,
+     "tokens": 502
+    },
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 2,
+     "tokens": 512
+    }
+   ]
+  },
+  {
+   "strategy": "fixed 512 + overlap 64",
+   "first_scheme_chunk_rank": 2,
+   "chunks_in_budget": 4,
+   "scheme_in_top3": true,
+   "scheme_in_budget": true,
+   "top3": [
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 0,
+     "tokens": 512
+    },
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 3,
+     "tokens": 512
+    },
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 4,
+     "tokens": 246
+    }
+   ]
+  },
+  {
+   "strategy": "recursive 256",
+   "first_scheme_chunk_rank": 3,
+   "chunks_in_budget": 8,
+   "scheme_in_top3": true,
+   "scheme_in_budget": true,
+   "top3": [
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 1,
+     "tokens": 217
+    },
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 0,
+     "tokens": 190
+    },
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 7,
+     "tokens": 248
+    }
+   ]
+  },
+  {
+   "strategy": "recursive 512",
+   "first_scheme_chunk_rank": 2,
+   "chunks_in_budget": 5,
+   "scheme_in_top3": true,
+   "scheme_in_budget": true,
+   "top3": [
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 0,
+     "tokens": 407
+    },
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 3,
+     "tokens": 490
+    },
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 2,
+     "tokens": 511
+    }
+   ]
+  },
+  {
+   "strategy": "paragraph (min 128, max 512)",
+   "first_scheme_chunk_rank": 4,
+   "chunks_in_budget": 12,
+   "scheme_in_top3": false,
+   "scheme_in_budget": true,
+   "top3": [
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 1,
+     "tokens": 151
+    },
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 11,
+     "tokens": 81
+    },
+    {
+     "source": "Essentially Sports",
+     "chunk_index": 2,
+     "tokens": 207
+    }
+   ]
+  }
+ ],
+ "model": "qwen2.5-7b-instruct-1m",
+ "ask_strategy": "paragraph (min 128, max 512)",
+ "answer": "The Houston Astros cheated in 2017 by stealing signs during games, specifically using a method involving banging on trash cans with bats to communicate different pitches to their hitters [3]. This form of sign stealing went beyond legal non-verbal communication between the dugout and the field because it involved illegal external assistance [1]."
+}
