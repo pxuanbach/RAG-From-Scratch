@@ -2,3 +2,4 @@ sentence-transformers>=3
 huggingface_hub
 anthropic
 numpy
+python-dotenv

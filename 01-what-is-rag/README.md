@@ -14,24 +14,21 @@ Lesson: [What Is RAG? Build Your First RAG in About 50 Lines of Python](https://
 
 1. Install the dependencies from the repo root, as described in the [root README](../README.md#setup).
 2. Have one LLM ready. Either start the LM Studio server with a model loaded, or get an Anthropic API key.
+3. Copy `.env.template` to `.env` in the repo root and pick option A (LM Studio) or B (Claude).
 
 The first run downloads the corpus (12 MB) and the `bge-m3` model (about 2.3 GB). A CPU handles 60 paragraphs in under a minute.
 
 ## Run
 
-With LM Studio:
+Create `.env` once in the repo root (see the [root README](../README.md#run-on-a-self-hosted-model-or-on-claude)), then:
 
 ```bash
+cp .env.template .env      # from the repo root, first time only
 cd 01-what-is-rag
-export ANTHROPIC_BASE_URL=http://127.0.0.1:1234
-export ANTHROPIC_API_KEY=lm-studio
-export RAG_MODEL=qwen2.5-7b-instruct-1m   # the model id LM Studio shows
 uv run python rag_50_lines.py
 ```
 
-With Claude, set only `ANTHROPIC_API_KEY` to your key. `RAG_MODEL` defaults to `claude-haiku-5-5`.
-
-In PowerShell, set variables with `$env:ANTHROPIC_BASE_URL = "http://127.0.0.1:1234"` and so on.
+The template targets LM Studio. For Claude, switch to option B in `.env` and fill in your key. If LM Studio shows a different model id, change `RAG_MODEL`.
 
 Expected output (your wording will differ, the scores should match):
 
@@ -72,5 +69,5 @@ Both commands overwrite `results.json`. On a local model, the step that pastes a
 | Symptom | Fix |
 |---|---|
 | `Connection error` | Start the LM Studio server and check that it listens on port 1234 |
-| Model not found | Set `RAG_MODEL` to an id from `curl http://127.0.0.1:1234/v1/models` |
+| Model not found | Set `RAG_MODEL` in `.env` to an id from `curl http://127.0.0.1:1234/v1/models` |
 | Garbled `’` or `—` when you pipe output on Windows | Set `PYTHONIOENCODING=utf-8` |

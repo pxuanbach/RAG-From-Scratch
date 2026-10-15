@@ -35,19 +35,17 @@ uv venv && uv pip install -r requirements.txt
 
 Lần chạy đầu sẽ tải model embedding `BAAI/bge-m3`, khoảng 2.3 GB.
 
-## Chạy bằng model local miễn phí hoặc bằng Claude
+## Chạy bằng model self-host hoặc bằng Claude
 
-Code gọi LLM qua SDK `anthropic`. [LM Studio](https://lmstudio.ai/docs/developer/anthropic-compat) có endpoint tương thích Anthropic, nên cùng một script chạy được trên Claude lẫn model local.
+Code gọi LLM qua SDK `anthropic`. [LM Studio](https://lmstudio.ai/docs/developer/anthropic-compat) có endpoint tương thích Anthropic, nên cùng một script chạy được trên Claude lẫn model self-host.
+
+Chép file mẫu thành `.env` ở thư mục gốc của repo:
 
 ```bash
-# Local, miễn phí (LM Studio đang chạy model như qwen2.5-7b-instruct-1m)
-export ANTHROPIC_BASE_URL=http://127.0.0.1:1234
-export ANTHROPIC_API_KEY=lm-studio
-export RAG_MODEL=qwen2.5-7b-instruct-1m
-
-# Hoặc Claude: chỉ cần key thật, RAG_MODEL mặc định là claude-haiku-5-5
-export ANTHROPIC_API_KEY=sk-ant-...
+cp .env.template .env
 ```
+
+File mẫu trỏ tới LM Studio đang chạy `qwen2.5-7b-instruct-1m`. Muốn dùng Claude, comment ba dòng đó lại rồi điền `ANTHROPIC_API_KEY` và `RAG_MODEL` ở phương án B. Mọi script đều nạp `.env` bằng `python-dotenv`, nên chúng ta chỉ cấu hình một lần cho cả series. `.env` đã nằm trong `.gitignore`.
 
 Rồi chạy bài trong thư mục của bài đó. README của từng bài ghi lệnh chạy và kết quả mong đợi.
 
@@ -56,7 +54,7 @@ cd 01-what-is-rag
 uv run python rag_50_lines.py
 ```
 
-Trên Windows PowerShell, dùng `$env:ANTHROPIC_BASE_URL = "http://127.0.0.1:1234"` thay cho `export`.
+Biến đã đặt sẵn trong shell sẽ được ưu tiên hơn giá trị trong `.env`.
 
 ## Dữ liệu
 

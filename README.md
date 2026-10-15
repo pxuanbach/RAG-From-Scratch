@@ -35,19 +35,17 @@ uv venv && uv pip install -r requirements.txt
 
 The first run downloads the `BAAI/bge-m3` embedding model, about 2.3 GB.
 
-## Run on a free local model or on Claude
+## Run on a self-hosted model or on Claude
 
-The code calls the LLM through the `anthropic` SDK. [LM Studio](https://lmstudio.ai/docs/developer/anthropic-compat) exposes an Anthropic-compatible endpoint, so the same script runs on Claude or on a local model.
+The code calls the LLM through the `anthropic` SDK. [LM Studio](https://lmstudio.ai/docs/developer/anthropic-compat) exposes an Anthropic-compatible endpoint, so the same script runs on Claude or on a self-hosted model.
+
+Copy the template to `.env` in the repo root:
 
 ```bash
-# Local, free (LM Studio running a model such as qwen2.5-7b-instruct-1m)
-export ANTHROPIC_BASE_URL=http://127.0.0.1:1234
-export ANTHROPIC_API_KEY=lm-studio
-export RAG_MODEL=qwen2.5-7b-instruct-1m
-
-# Or Claude: set only a real key; RAG_MODEL defaults to claude-haiku-5-5
-export ANTHROPIC_API_KEY=sk-ant-...
+cp .env.template .env
 ```
+
+The template points at LM Studio running `qwen2.5-7b-instruct-1m`. To use Claude, comment out those three lines and fill in `ANTHROPIC_API_KEY` and `RAG_MODEL` under option B. Every script loads `.env` with `python-dotenv`, so you set it once for all lessons. `.env` is gitignored.
 
 Then run a lesson from its folder. Each lesson's README lists its commands and expected output.
 
@@ -56,7 +54,7 @@ cd 01-what-is-rag
 uv run python rag_50_lines.py
 ```
 
-On Windows PowerShell, use `$env:ANTHROPIC_BASE_URL = "http://127.0.0.1:1234"` instead of `export`.
+Variables already set in your shell take priority over `.env`.
 
 ## Data
 

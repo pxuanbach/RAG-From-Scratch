@@ -4,8 +4,11 @@ import sys
 
 import anthropic
 import numpy as np
+from dotenv import load_dotenv
 from huggingface_hub import hf_hub_download
 from sentence_transformers import SentenceTransformer
+
+load_dotenv()  # reads ANTHROPIC_* and RAG_MODEL from .env in the repo root
 
 # 1. Load 20 news articles and keep the first 3 real paragraphs of each
 path = hf_hub_download("yixuantt/MultiHopRAG", "corpus.json", repo_type="dataset")

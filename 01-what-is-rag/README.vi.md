@@ -14,24 +14,21 @@ Bài học: [RAG là gì? Tự xây RAG đầu tiên trong khoảng 50 dòng Pyt
 
 1. Cài thư viện từ thư mục gốc của repo, theo [README gốc](../README.vi.md#cài-đặt).
 2. Chuẩn bị một LLM: bật server LM Studio với một model đã nạp, hoặc có Anthropic API key.
+3. Chép `.env.template` thành `.env` ở thư mục gốc, chọn phương án A (LM Studio) hoặc B (Claude).
 
 Lần chạy đầu sẽ tải corpus (12 MB) và model `bge-m3` (khoảng 2.3 GB). CPU embed 60 đoạn mất chưa tới một phút.
 
 ## Chạy
 
-Với LM Studio:
+Tạo `.env` một lần ở thư mục gốc của repo (xem [README gốc](../README.vi.md#chạy-bằng-model-self-host-hoặc-bằng-claude)), rồi chạy:
 
 ```bash
+cp .env.template .env      # chạy ở thư mục gốc, chỉ lần đầu
 cd 01-what-is-rag
-export ANTHROPIC_BASE_URL=http://127.0.0.1:1234
-export ANTHROPIC_API_KEY=lm-studio
-export RAG_MODEL=qwen2.5-7b-instruct-1m   # id model hiển thị trong LM Studio
 uv run python rag_50_lines.py
 ```
 
-Với Claude, chỉ cần đặt `ANTHROPIC_API_KEY` bằng key của bạn. `RAG_MODEL` mặc định là `claude-haiku-5-5`.
-
-Trên PowerShell, đặt biến bằng `$env:ANTHROPIC_BASE_URL = "http://127.0.0.1:1234"`, các biến khác tương tự.
+File mẫu trỏ tới LM Studio. Muốn dùng Claude, chuyển sang phương án B trong `.env` và điền key. Nếu LM Studio hiển thị id model khác, sửa `RAG_MODEL`.
 
 Kết quả mong đợi (câu chữ sẽ khác, điểm số phải giống):
 
@@ -78,5 +75,5 @@ Cả hai lệnh đều ghi đè `results.json`. Với model local, bước dán 
 | Triệu chứng | Cách sửa |
 |---|---|
 | `Connection error` | Bật server LM Studio, kiểm tra cổng 1234 |
-| Không tìm thấy model | Đặt `RAG_MODEL` bằng một id lấy từ `curl http://127.0.0.1:1234/v1/models` |
+| Không tìm thấy model | Sửa `RAG_MODEL` trong `.env` thành một id lấy từ `curl http://127.0.0.1:1234/v1/models` |
 | Ký tự `’` hoặc `—` bị vỡ khi pipe output trên Windows | Đặt `PYTHONIOENCODING=utf-8` |

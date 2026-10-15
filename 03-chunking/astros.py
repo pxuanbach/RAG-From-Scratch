@@ -3,7 +3,7 @@
 Usage: uv run python astros.py [--ask]      (writes results/astros.json)
 For each chunking strategy: where does the first chunk that describes the scheme (camera, trash can) rank, and
 is it inside the top 3 or inside a 2,000-token context? With --ask, the best strategy's chunks that fit 2,000 tokens
-go to the LLM (LM Studio or Claude, same variables as lesson 01).
+go to the LLM (LM Studio or Claude, read from the .env in the repo root).
 """
 import json
 import os
@@ -44,6 +44,8 @@ for name, strategy in STRATEGIES.items():
 
 if "--ask" in sys.argv:
     import anthropic
+    from dotenv import load_dotenv
+    load_dotenv()
     system = ("Answer using only the documents provided. Cite documents as [1], [2]. "
               "If the documents do not contain the answer, say you don't know.")
     context = "\n\n".join(f"[{n}] {c.meta['title']} ({c.meta['source']})\n{c.raw_text}" for n, c in enumerate(best, 1))
